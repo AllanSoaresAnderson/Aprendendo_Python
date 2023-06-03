@@ -22,7 +22,7 @@ def jogar():
     rodada = 1
 
     for rodada in range (1, total_de_tentativas+1):
-        print("Tentativa {} de {}".format(rodada, total_de_tentativas), numero_secreto)
+        print("Tentativa {} de {}".format(rodada, total_de_tentativas))
         chute_str = input("Digite um número de 1 a 100: ")
         print("Você digitou: ", chute_str)
         chute = int(chute_str)
@@ -70,3 +70,8 @@ def jogar():
 #             print("Você errou! O seu chute foi menor que o número secreto.")
 #
 #     rodada = rodada + 1
+
+
+
+if __name__ == "__main__":
+    jogar()
