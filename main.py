@@ -4,9 +4,19 @@ print("*********************************")
 print("Bem vindo ao jogo de Adivinhação!")
 print("*********************************")
 
+print("Defina a dificuldade do jogo:")
+print("(1) Fácil (2) Médio (3) Difícil")
+dificuldade = int(input("Digite de 1 a 3: "))
+total_de_tentativas = 0
+
+if (dificuldade == 1):
+    total_de_tentativas = 30
+elif (dificuldade == 2):
+    total_de_tentativas = 20
+else:
+    total_de_tentativas = 10
+
 numero_secreto = random.randrange(1,101)
-print(numero_secreto)
-total_de_tentativas = 3
 rodada = 1
 
 #Loop While +++++++++++++++++++++++++++++++++++++++++++
