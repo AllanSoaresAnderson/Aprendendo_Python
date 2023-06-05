@@ -6,8 +6,8 @@ def jogar():
     print("*********************************")
 
 
-    arquivo = open("palavras.txt", "r")
-    lista_palavras = [palavra.lower().strip() for palavra in arquivo]
+    with open("palavras.txt", "r") as arquivo:
+        lista_palavras = [palavra.lower().strip() for palavra in arquivo]
     palavra_secreta = lista_palavras[random.randrange(0,len(lista_palavras))]
     letras_acertadas = ["_" for caracter in palavra_secreta]
     print(letras_acertadas)
